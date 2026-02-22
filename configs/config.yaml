@@ -1,0 +1,21 @@
+# @package _global_
+defaults:
+  - model: conv_tasnet
+  - data: synthetic
+  - training: default
+  - evaluation: enhancement
+
+# Experiment settings
+experiment_name: speech_enhancement
+seed: 42
+device: auto  # auto, cpu, cuda, mps
+
+# Paths
+data_dir: data
+output_dir: outputs
+checkpoint_dir: checkpoints
+log_dir: logs
+
+# Privacy and ethics
+privacy_mode: true
+log_level: INFO

@@ -1,0 +1,21 @@
+# @package data
+_target_: src.data.synthetic_dataset.SyntheticDataset
+
+# Dataset parameters
+sample_rate: 16000
+duration: 4.0  # seconds
+n_samples_train: 1000
+n_samples_val: 200
+n_samples_test: 200
+
+# Audio parameters
+speech_freq_range: [100, 8000]  # Hz
+noise_types: ["white", "pink", "brown"]
+snr_range: [0, 20]  # dB
+
+# Feature extraction
+n_fft: 512
+hop_length: 256
+n_mels: 80
+fmin: 0
+fmax: 8000

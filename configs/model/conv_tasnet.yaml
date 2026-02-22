@@ -1,0 +1,19 @@
+# @package model
+_target_: src.models.conv_tasnet.ConvTasNet
+
+# Model architecture
+encoder_dim: 256
+decoder_dim: 256
+encoder_kernel_size: 16
+decoder_kernel_size: 16
+encoder_stride: 8
+decoder_stride: 8
+n_sources: 2  # speech and noise
+n_layers: 8
+n_filters: 512
+kernel_size: 3
+stride: 1
+padding: 1
+dilation: 1
+batch_norm: true
+dropout: 0.1

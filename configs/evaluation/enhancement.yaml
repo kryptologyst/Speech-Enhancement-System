@@ -1,0 +1,22 @@
+# @package evaluation
+_target_: src.eval.evaluator.Evaluator
+
+# Evaluation parameters
+batch_size: 32
+compute_pesq: true
+compute_stoi: true
+save_audio: true
+save_spectrograms: true
+
+# Metrics
+metrics:
+  - si_sdr
+  - sdr
+  - snr
+  - pesq
+  - stoi
+
+# Output
+output_dir: results
+audio_format: wav
+spectrogram_format: png
